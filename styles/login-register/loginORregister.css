@@ -1,6 +1,6 @@
 .logo-container {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: var(--green);
 }
 
@@ -9,23 +9,137 @@
   height: auto;
   display: block;
   margin: 0 auto;
+  padding-top: 15px;
 }
 
-.logo-container p {
+.logo-container h1 {
   display: none;
 }
 
-@media only screen and (min-width: 600px) {
+.google-button {
+  display: flex;
+  width: 95%;
+  max-width: var(--max-width-sm-screen);
+  height: 50px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border: 2px solid var(--red);
+  border-radius: 10px;
+}
+
+.login-form-container h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 32px;
+}
+
+.login-form-container button svg {
+  width: 30px;
+  height: 30px;
+}
+.login-form-container button span {
+  padding-left: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: var(--red);
+}
+
+.or-container {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.or-container div:first-child,
+.or-container div:nth-child(3) {
+  width: 30%;
+  max-width: 120px;
+  height: 1px;
+  background: var(--gray);
+}
+
+.or-container span {
+  color: var(--gray);
+  padding: 0 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.login-input-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-input-container input {
+  width: 95%;
+  max-width: var(--max-width-sm-screen);
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--light-gray-for-bg);
+  padding: 0 20px;
+}
+
+.login-input-container input::placeholder {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.login-input-container input:focus {
+  outline-color: var(--light-green);
+}
+
+.login-input-container span {
+  color: var(--light-green);
+  width: 95%;
+  max-width: var(--max-width-sm-screen);
+  text-align: right;
+  margin-top: 0.5rem;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.login-input-container button {
+  width: 95%;
+  max-width: var(--max-width-sm-screen);
+  height: 48px;
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 15px;
+  letter-spacing: 4px;
+}
+
+.suggestion-text {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.suggestion-text span {
+  color: var(--light-green);
+  text-decoration: underline;
+}
+/* @media only screen and (min-width: 600px) {
   .logo-container {
-    height: 140px;
+    height: 180px;
   }
-  .logo-container p {
+  .logo-container h1 {
     display: block;
+    text-align: center;
+    font-size: 40px;
+    color: var(--white);
+    font-weight: 500;
+    padding: 10px 0;
+    letter-spacing: 2px;
   }
 }
 
 @media only screen and (min-width: 720px) {
-  body {
-    display: block;
-  }
-}
+} */

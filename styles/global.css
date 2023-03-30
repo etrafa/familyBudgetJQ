@@ -11,4 +11,10 @@ body,
 
 :root {
   --green: #00710f;
+  --light-green: #00bc2a;
+  --white: #fff;
+  --red: #fa5d5d;
+  --gray: #b1b1b1;
+  --light-gray-for-bg: #f5f5f5;
+  --max-width-sm-screen: 320px;
 }
