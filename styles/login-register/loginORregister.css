@@ -20,7 +20,7 @@
   display: flex;
   width: 95%;
   max-width: var(--max-width-sm-screen);
-  height: 50px;
+  height: 48px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -115,6 +115,8 @@
   color: var(--white);
   font-size: 15px;
   letter-spacing: 4px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .suggestion-text {
@@ -122,9 +124,11 @@
   margin-top: 2rem;
 }
 
-.suggestion-text span {
+.suggestion-action {
   color: var(--light-green);
   text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
 }
 /* @media only screen and (min-width: 600px) {
   .logo-container {
