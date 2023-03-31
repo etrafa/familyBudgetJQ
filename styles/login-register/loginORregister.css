@@ -105,6 +105,16 @@
   outline-color: var(--light-green);
 }
 
+.error-message {
+  display: none;
+  font-size: 14px;
+  color: #ff0000;
+  width: 95%;
+  max-width: var(--max-width-sm-screen);
+  text-align: left;
+  font-weight: 600;
+}
+
 .login-input-container span {
   color: var(--light-green);
   width: 95%;
