@@ -3,6 +3,7 @@
     "start": "lite-server"
   },
   "dependencies": {
+    "firebase": "^9.19.0",
     "lite-server": "^2.6.1"
   },
   "type": "module"
