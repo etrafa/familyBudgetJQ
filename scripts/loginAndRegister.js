@@ -51,8 +51,7 @@ export const authClickHandler = () => {
       userLoginInformations.email === DUMMY_USER_DATA.email &&
       userLoginInformations.password === DUMMY_USER_DATA.password
     ) {
-      window.location.replace("./home.html");
-      console.log("correct");
+      window.location.replace("./dashboard.html");
     } else {
       $(".error-message").show();
       console.log(userLoginInformations);
