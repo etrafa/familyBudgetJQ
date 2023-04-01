@@ -18,12 +18,3 @@ body,
   --light-gray-for-bg: #f5f5f5;
   --max-width-sm-screen: 320px;
 }
-
-@media only screen and (min-width: 810px) {
-  main {
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    left: 88px;
-  }
-}
