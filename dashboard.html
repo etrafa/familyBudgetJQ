@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles/global.css"">
     <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/dashboard/dashboard.css" />
     <script
       src="https://kit.fontawesome.com/6acc6d0fe0.js"
       crossorigin="anonymous"
@@ -139,5 +140,30 @@
       </div>
     </nav>
     <!-- NAVBAR FOR SM SCREEN ENDS HERE -->
+    <!-- DASHBOARD STARTS HERE  -->
+    <main>
+      <h2>Dashboards</h2>
+      <div id="charts">
+        <div class="chart">
+          <h6>This Week</h6>
+          <canvas id="chart-one"></canvas>
+        </div>
+        <div class="chart">
+          <h6>This Month</h6>
+          <canvas id="chart-two"></canvas>
+        </div>
+        <div class="chart">
+          <h6>Last week</h6>
+          <canvas id="chart-three"></canvas>
+        </div>
+        <div class="chart">
+          <h6>Last Month</h6>
+          <canvas id="chart-four"></canvas>
+        </div>
+      </div>
+    </main>
+    <!-- DASHBOARD ENDS HERE -->
+    <script src="scripts/dashboard.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
   </body>
 </html>
