@@ -17,6 +17,13 @@
   text-align: right;
 }
 
+main h2 {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 1.2px;
+  margin-top: 2rem;
+}
+
 @media only screen and (min-width: 810px) {
   #charts {
     grid-template-columns: 1fr 1fr;
