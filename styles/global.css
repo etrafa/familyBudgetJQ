@@ -103,6 +103,11 @@ main h2 {
     display: none;
   }
 
+  #page-layout-main {
+    width: calc(100% - 95px);
+    margin-left: auto;
+  }
+
   .sidebar-placeholder {
     display: block;
     width: 96px;

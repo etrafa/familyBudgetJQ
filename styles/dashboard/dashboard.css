@@ -10,6 +10,7 @@
   width: 95%;
   margin: 30px auto;
   padding: 20px 0;
+  max-width: 500px;
 }
 
 .chart h6 {
@@ -20,6 +21,5 @@
 @media only screen and (min-width: 810px) {
   #charts {
     grid-template-columns: 1fr 1fr;
-    gap: 0 40px;
   }
 }
