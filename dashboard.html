@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles/global.css"">
-    <link rel="stylesheet" href="styles/sidebar.css" />
-    <link rel="stylesheet" href="styles/navbarTop.css" />
-    <link rel="stylesheet" href="styles/navbarBottom.css" />
     <link rel="stylesheet" href="styles/dashboard/dashboard.css" />
     <script
       src="https://kit.fontawesome.com/6acc6d0fe0.js"
@@ -16,38 +13,34 @@
     ></script>
   </head>
   <body>
-    <!-- SIDEBAR AND NAVBAR FOR LG SCREEN STARTS HERE -->
-    <div class="bar-container-lg-screen">
-      <div id="sidebar-placeholder"></div>
-      <div id="navbar-placeholder"></div>
-    </div>
-    <!-- SIDEBAR AND NAVBAR FOR LG SCREEN ENDS HERE -->
-    <!-- NAVBAR FOR SM SCREEN STARTS HERE -->
-    <div id="bottom-navbar-holder"></div>
-    <!-- NAVBAR FOR SM SCREEN ENDS HERE -->
-    <!-- DASHBOARD STARTS HERE  -->
-    <main>
-      <h2>Dashboards</h2>
-      <div id="charts">
-        <div class="chart">
-          <h6>This Week</h6>
-          <canvas id="chart-one"></canvas>
-        </div>
-        <div class="chart">
-          <h6>This Month</h6>
-          <canvas id="chart-two"></canvas>
-        </div>
-        <div class="chart">
-          <h6>Last week</h6>
-          <canvas id="chart-three"></canvas>
-        </div>
-        <div class="chart">
-          <h6>Last Month</h6>
-          <canvas id="chart-four"></canvas>
-        </div>
+    <div id="page-layout-container">
+      <div class="sidebar-placeholder"></div>
+      <div id="page-layout-main">
+        <div class="navbar-top-placeholder"></div>
+        <main>
+          <h2>Dashboards</h2>
+          <div id="charts">
+            <div class="chart">
+              <h6>This Week</h6>
+              <canvas id="chart-one"></canvas>
+            </div>
+            <div class="chart">
+              <h6>This Month</h6>
+              <canvas id="chart-two"></canvas>
+            </div>
+            <div class="chart">
+              <h6>Last week</h6>
+              <canvas id="chart-three"></canvas>
+            </div>
+            <div class="chart">
+              <h6>Last Month</h6>
+              <canvas id="chart-four"></canvas>
+            </div>
+          </div>
+        </main>
+        <div class="navbar-bottom-placeholder"></div>
       </div>
-    </main>
-    <!-- DASHBOARD ENDS HERE -->
+    </div>
     <script src="scripts/dashboard.js" type="module"></script>
     <script src="jquery/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
