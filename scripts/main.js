@@ -4,7 +4,7 @@ import {
   loginInputChangeHandler,
 } from "./loginAndRegister.js";
 
-$("document").ready(function () {
+$(function () {
   changeLoginType();
   loginInputChangeHandler();
   authClickHandler();
