@@ -16,6 +16,14 @@ a {
 a:visited {
   text-decoration: none;
 }
+
+main h2 {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 1.2px;
+  margin-top: 2rem;
+}
+
 :root {
   --green: #00710f;
   --light-green: #00bc2a;
