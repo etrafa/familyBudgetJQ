@@ -9,6 +9,13 @@ body,
   font-family: "Nunito", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
 :root {
   --green: #00710f;
   --light-green: #00bc2a;
