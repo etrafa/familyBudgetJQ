@@ -1,87 +1,88 @@
-.modal-container {
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
+.page-overlay {
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: auto;
+  position: fixed;
+  min-height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 50;
+}
+
+.modal-container {
+  width: 95%;
+  max-width: 768px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05), 0 8px 16px rgba(0, 0, 0, 0.05),
+    0 16px 32px rgba(0, 0, 0, 0.05), 0 32px 64px rgba(0, 0, 0, 0.05);
+}
+
+.modal-header {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-title {
+  margin-left: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.modal-divider {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
 }
 
 .modal-body {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 95%;
-  border-radius: 5px;
-  max-width: 900px;
-}
-
-.modal-body h4 {
-  text-align: center;
-  font-size: 24px;
-  border-bottom: 1px solid var(--gray);
-}
-
-.input-box {
   width: 100%;
-  height: 50px;
-  margin: 20px 0;
-  border-radius: 5px;
-  position: relative;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
 }
 
-.input-box input {
-  width: 100%;
-  height: 100%;
-  border: none;
+.modal-box {
+  grid-column: span 1 / span 1;
+  height: 4rem;
   border: 1px solid var(--border-color);
-  position: relative;
-  padding-top: 10px;
-  text-align: right;
-  outline: none;
-  font-weight: 600;
-  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.input-box span {
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  z-index: 9999;
-  color: var(--gray);
+.modal-body div:last-child {
+  grid-column: span 2 / span 2;
 }
 
-.input-box input:focus {
-  border: 2px solid var(--green);
-}
-
-.transaction-buttons {
+.modal-footer {
+  margin: 20px;
   display: flex;
   justify-content: end;
-  gap: 20px;
 }
 
-.transaction-buttons button {
-  width: 120px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  text-transform: uppercase;
+.modal-button {
+  margin: 0 10px;
+  background-color: #f3f4f6;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
 }
 
-.transaction-buttons button:first-child {
+.modal-button:hover {
+  opacity: 0.6;
+}
+
+.cancel-button {
   color: var(--light-green);
-}
-
-@media only screen and (min-width: 810px) {
-  .modal-container {
-  }
 }
