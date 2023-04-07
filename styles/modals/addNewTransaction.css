@@ -1,4 +1,8 @@
 .modal-overlay {
+  display: none;
+}
+
+.modal-overlay-active {
   width: 100%;
   margin-left: auto;
   position: fixed;
